@@ -1,0 +1,45 @@
+nav {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #c491de, #ff9c9e);
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul * {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1;
+}
+
+#page-nav li {
+    width: 200px;
+}
+
+#brand-icons li {
+    width: 100px;
+}
+
+#nav-underline {
+    position: absolute;
+    top: 4.7rem;
+    left: 0;
+    width: 200px;
+    height: 0.3rem;
+    background-color: #f0e2ff;
+    transition: left 0.3s ease-in-out;
+}
