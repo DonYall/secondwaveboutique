@@ -1,11 +1,14 @@
+---
+---
+
 @font-face {
     font-family: "Libre Baskerville";
-    src: url("/assets/fonts/LibreBaskerville-Regular.ttf");
+    src: url("{{ site.baseurl }}/assets/fonts/LibreBaskerville-Regular.ttf");
 }
 
 @font-face {
     font-family: "Source Sans Pro";
-    src: url("/assets/fonts/SourceSansPro-Regular.otf");
+    src: url("{{ site.baseurl }}/assets/fonts/SourceSansPro-Regular.otf");
 }
 
 body {
