@@ -1,14 +1,20 @@
----
----
-
 @font-face {
     font-family: "Libre Baskerville";
-    src: url("{{ site.baseurl }}/assets/fonts/LibreBaskerville-Regular.ttf");
+    src: url("/assets/fonts/LibreBaskerville-Regular.ttf");
 }
 
 @font-face {
     font-family: "Source Sans Pro";
-    src: url("{{ site.baseurl }}/assets/fonts/SourceSansPro-Regular.otf");
+    src: url("/assets/fonts/SourceSansPro-Regular.otf");
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -17,7 +23,6 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 li {
@@ -35,4 +40,13 @@ a {
     margin: 0 auto;
     padding: 1rem;
     max-width: 800px;
+}
+
+.big-image {
+    width: 100%;
+    height: auto;
+}
+
+.dim {
+    filter: brightness(0.5);
 }
