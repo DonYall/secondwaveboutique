@@ -8,13 +8,21 @@
     src: url("/assets/fonts/SourceSansPro-Regular.otf");
 }
 
+* {
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 li {
@@ -32,4 +40,13 @@ a {
     margin: 0 auto;
     padding: 1rem;
     max-width: 800px;
+}
+
+.big-image {
+    width: 100%;
+    height: auto;
+}
+
+.dim {
+    filter: brightness(0.5);
 }
