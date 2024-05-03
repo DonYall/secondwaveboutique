@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Libre Baskerville";
-    src: url("/assets/fonts/LibreBaskerville-Regular.ttf");
+    src: url("../assets/fonts/LibreBaskerville-Regular.ttf");
 }
 
 @font-face {
     font-family: "Source Sans Pro";
-    src: url("/assets/fonts/SourceSansPro-Regular.otf");
+    src: url("../assets/fonts/SourceSansPro-Regular.otf");
 }
 
 * {
