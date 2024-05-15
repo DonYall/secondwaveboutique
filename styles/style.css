@@ -50,3 +50,9 @@ a {
 .dim {
     filter: brightness(0.5);
 }
+
+h1,
+h2,
+h3 {
+    font-family: "Libre Baskerville", serif;
+}
