@@ -9,3 +9,8 @@ for (let i = 0; i < navTabs.length; i++) {
         navUnderline.style.left = `${navIndex * 150}px`;
     });
 }
+
+function toggleNav() {
+    document.querySelector("nav").classList.toggle("active");
+    document.getElementById("hamburger").classList.toggle("active");
+}
