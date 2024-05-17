@@ -2,11 +2,12 @@ nav {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 4rem;
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, #c491de, #ff9c9e);
+    /* background-image: linear-gradient(to right, #c491de, #ff9c9e); */
+    /* background-color: rgba(140, 45, 105, 0.2); */
 }
 
 nav ul {
@@ -20,13 +21,13 @@ nav ul * {
     font-family: "Libre Baskerville", serif;
     font-size: 1rem;
     font-style: italic;
-    color: #ffffff;
+    color: #1a141c;
     text-align: center;
     line-height: 1;
 }
 
 #page-nav li {
-    width: 200px;
+    width: 150px;
 }
 
 #brand-icons li {
@@ -35,10 +36,39 @@ nav ul * {
 
 #nav-underline {
     position: absolute;
-    top: 3.8rem;
+    top: 2.9rem;
     left: 0;
-    width: 200px;
-    height: 0.2rem;
-    background-color: #f0e2ff;
+    width: 150px;
+    height: 0.1rem;
+    /* background-color: #f0e2ff; */
+    background-color: #17121c;
     transition: left 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    #nav-underline {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column;
+        width: 150px;
+        height: min-content;
+        left: auto;
+        right: 0;
+        align-items: flex-end;
+    }
+
+    nav * {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    #brand-icons {
+        width: 100%;
+    }
 }

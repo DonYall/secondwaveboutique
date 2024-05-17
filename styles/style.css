@@ -23,6 +23,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
+    /* background-color: rgb(248, 237, 242); */
 }
 
 li {
@@ -36,10 +37,14 @@ a {
     color: #000;
 }
 
+button {
+    cursor: pointer;
+}
+
 #content {
     margin: 0 auto;
     padding: 1rem;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .big-image {

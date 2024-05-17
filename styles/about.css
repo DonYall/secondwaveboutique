@@ -1,20 +1,15 @@
 #nav-underline {
-    left: 200px;
+    left: 150px;
 }
 
 .about-description {
     font-size: 16.5px;
 }
 
-.opening-date {
-    margin: 0;
-}
-
 .main-img {
     width: 75%;
     margin-left: 13%;
     margin-right: 13%;
-    margin-top: 7%;
 }
 
 .img2,

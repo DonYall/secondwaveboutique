@@ -1,3 +1,7 @@
+nav {
+    position: absolute;
+}
+
 #main-heading {
     display: flex;
     justify-content: center;
@@ -6,21 +10,13 @@
 }
 
 #main-heading > * {
-    position: absolute;
-    color: #fff;
-}
-
-#main-heading .big-image {
-    position: relative;
-    height: 100vh;
-    width: auto;
+    color: #000000;
 }
 
 #main-heading > div {
-    background-color: rgba(0, 0, 0, 0.6);
     padding: 3rem 0;
     /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 20%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0) 100%); */
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,12 +27,7 @@
 #hero-logo {
     width: 50%;
     height: auto;
-    opacity: 1;
     transition: 0.3s ease-in-out;
-}
-
-#hero-logo:hover {
-    opacity: 0.1;
 }
 
 #main-heading h2 {
@@ -51,8 +42,8 @@
     font-family: "Libre Baskerville", serif;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #202020;
-    background-color: #fbe9fd;
+    background-color: #202020;
+    color: #fff;
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.5rem;
@@ -61,14 +52,50 @@
 }
 
 .book-button:hover {
-    background-color: #202020;
-    color: #fbe9fd;
+    background-color: #fde9ed;
+    color: #202020;
+    outline: 1px solid #202020;
 }
 
 #content {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section > div {
+    width: 65%;
+}
+
+section img {
+    width: 30%;
+    height: auto;
+}
+
+section h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #434343;
+}
+
+section .book-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
 }
 
 #gallery {
