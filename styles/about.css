@@ -5,6 +5,12 @@
     font-size: 16.5px;
     margin-bottom: 10%;
 }
+.top-about-image {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
 .Opening-word {
     margin: 0;
 }
