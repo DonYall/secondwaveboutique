@@ -25,5 +25,6 @@ document.getElementById("toggle-theme").addEventListener("click", function () {
     r.style.setProperty("--button-background", light ? "#202020" : "#fde9ed");
     r.style.setProperty("--button-text", light ? "#fff" : "#000");
     r.style.setProperty("--button-hover", light ? "#fde9ed" : "#202020");
+    r.style.setProperty("--header-background", light ? "#fde9ed" : "#3e3a3a");
     document.getElementById("hero-logo").src = light ? "assets/img/logo.png" : "assets/img/logo-darkmode.png";
 });

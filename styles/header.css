@@ -90,11 +90,14 @@ nav ul * {
 
 #nav-underline {
     position: absolute;
-    top: 2.9rem;
+    top: 0;
     left: 0;
     width: 150px;
-    height: 0.1rem;
-    background-color: var(--color-text);
+    height: 3rem;
+    border-bottom: 2px solid var(--color-text);
+    background-image: linear-gradient(0deg, var(--header-background) 0%, var(--color-background) 100%);
+    z-index: -1;
+    pointer-events: none;
     transition: left 0.3s ease-in-out;
 }
 
