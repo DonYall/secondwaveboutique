@@ -31,9 +31,6 @@ nav ul * {
 #page-nav li {
     width: 150px;
     height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #page-nav li a {
@@ -97,7 +94,6 @@ nav ul * {
     left: 0;
     width: 150px;
     height: 0.1rem;
-    /* background-color: #f0e2ff; */
     background-color: var(--color-text);
     transition: left 0.3s ease-in-out;
 }
