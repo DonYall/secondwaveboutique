@@ -10,8 +10,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-image: linear-gradient(to right, #c491de, #ff9c9e); */
-    /* background-color: rgba(140, 45, 105, 0.2); */
 }
 
 nav ul {
@@ -25,7 +23,7 @@ nav ul * {
     font-family: "Libre Baskerville", serif;
     font-size: 1rem;
     font-style: italic;
-    color: #1a141c;
+    color: var(--color-text);
     text-align: center;
     line-height: 1;
 }
@@ -38,6 +36,48 @@ nav ul * {
     width: 100px;
 }
 
+#toggle-theme {
+    border: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    background-color: #f0e2ff;
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+
+#toggle-theme i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+#toggle-theme.active {
+    background-color: #000;
+}
+
+#toggle-theme.active i {
+    color: #f0e2ff;
+}
+
+#toggle-theme i:first-child {
+    display: block;
+}
+
+#toggle-theme i:last-child {
+    display: none;
+}
+
+#toggle-theme.active i:first-child {
+    display: none;
+}
+
+#toggle-theme.active i:last-child {
+    display: block;
+}
+
 #nav-underline {
     position: absolute;
     top: 2.9rem;
@@ -45,7 +85,7 @@ nav ul * {
     width: 150px;
     height: 0.1rem;
     /* background-color: #f0e2ff; */
-    background-color: #17121c;
+    background-color: var(--color-text);
     transition: left 0.3s ease-in-out;
 }
 
@@ -57,7 +97,7 @@ nav ul * {
         right: 0;
         padding: 1rem;
         font-size: 1.5rem;
-        color: #1a141c;
+        color: var(--color-text);
         z-index: 100;
     }
 
