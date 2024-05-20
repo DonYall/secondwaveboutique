@@ -1,9 +1,32 @@
 #nav-underline {
     left: 150px;
 }
+.about-top-image {
+    width: 89%;
+}
+.text-overlay {
+    font-size: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Change to #654321 for dark brown or #000000 for black */
+    text-align: center;
+    margin: 0%;
+}
 
 .about-description {
     font-size: 16.5px;
+    margin-bottom: 10%;
+}
+.Opening-word {
+    margin: 0;
+}
+
+.opening-date {
+    padding-left: 4%;
+    padding-bottom: 3.5%;
+    margin: 0;
 }
 
 .main-img {
