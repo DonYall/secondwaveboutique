@@ -48,7 +48,7 @@ nav {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .book-button:hover {
@@ -99,19 +99,24 @@ section .book-button {
     padding: 0.5rem 1rem;
 }
 
-#gallery {
+/* #buy-sell {
+    background-color: var(--button-hover);
+    color: var(--color-text);
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 10%;
-    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-#gallery img {
-    width: 40%;
-    height: auto;
-    margin-bottom: 10%;
-}
+#buy-sell div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 
 @media (max-width: 768px) {
     #main-heading {
