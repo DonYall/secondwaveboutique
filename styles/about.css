@@ -1,9 +1,37 @@
 #nav-underline {
     left: 150px;
 }
-
+.content {
+    padding: 0%;
+}
+.about-description-heading-container {
+    background-color: rgb(182, 182, 182);
+    margin: 0px;
+}
+.head {
+    padding: 2%;
+    margin: 0%;
+}
 .about-description {
     font-size: 16.5px;
+    margin-bottom: 10%;
+    padding: 2%;
+}
+.top-about-image {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.Opening-word {
+    margin: 0;
+    padding-left: 2%;
+}
+
+.opening-date {
+    padding-left: 6%;
+    padding-bottom: 3.5%;
+    margin: 0;
 }
 
 .main-img {
@@ -16,6 +44,7 @@
 .jess1 {
     padding-top: 6%;
     width: 45%;
+    padding-bottom: 3%;
 }
 
 .img2 {

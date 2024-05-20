@@ -2,31 +2,31 @@
     left: 300px;
 }
 
-#content {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#content > form {
+.content > form {
     height: 100vh;
     width: 80%;
     display: flex;
     flex-direction: column;
 }
 
-#content > form > label {
+.content > form > label {
     margin-top: 1rem;
 }
 
-#content > form > input {
+.content > form > input {
     margin-top: 0.5rem;
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 2rem;
 }
 
-#content > form > textarea {
+.content > form > textarea {
     margin-top: 0.5rem;
     padding: 0.5rem;
     font-size: 1rem;
@@ -34,7 +34,7 @@
     height: 10rem;
 }
 
-#content > form > button {
+.content > form > button {
     margin-top: 1rem;
     padding: 0.5rem;
     font-size: 1rem;
@@ -43,7 +43,7 @@
     color: #fff;
 }
 
-#content > form > button:hover {
+.content > form > button:hover {
     background-color: #333;
 }
 

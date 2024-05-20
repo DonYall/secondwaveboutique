@@ -39,7 +39,7 @@ nav {
 }
 
 .book-button {
-    font-family: "Libre Baskerville", serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     background-color: var(--button-background);
@@ -57,7 +57,7 @@ nav {
     outline: 1px solid var(--button-background);
 }
 
-#content {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,24 +99,58 @@ section .book-button {
     padding: 0.5rem 1rem;
 }
 
-/* #buy-sell {
+#buy-sell {
     background-color: var(--button-hover);
     color: var(--color-text);
-    display: flex;
-    align-items: center;
-    width: 100vw;
     height: 100vh;
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100vw;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+    text-align: center;
 }
 
-#buy-sell div {
+#buy-sell > h1 {
+    color: var(--color-text-brighter);
+    font-weight: normal;
+}
+
+#buy-sell > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#buy-sell > div > span {
+    /* divider */
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-text);
+    opacity: 0.2;
+}
+
+#buy-sell > div > div {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+    gap: 1rem;
+}
+
+#buy-sell > div > div > h1 {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+#contact {
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     #main-heading {
@@ -161,7 +195,7 @@ section .book-button {
         flex-direction: column-reverse;
     }
 
-    #gallery img {
-        width: 80%;
+    #buy-sell > div > div > h1 {
+        display: none;
     }
 }
