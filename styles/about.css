@@ -5,17 +5,20 @@
     padding: 0%;
 }
 .about-description-heading-container {
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(255, 255, 255);
     margin: 0px;
+    width: 100%;
 }
 .head {
     padding: 2%;
     margin: 0%;
+    padding-right: 0%;
 }
 .about-description {
     font-size: 16.5px;
     margin-bottom: 10%;
     padding: 2%;
+    padding-right: 0%;
 }
 .top-about-image {
     width: 100%;
@@ -26,6 +29,7 @@
 .Opening-word {
     margin: 0;
     padding-left: 2%;
+    padding-right: 0%;
 }
 
 .opening-date {
@@ -37,7 +41,6 @@
 .main-img {
     width: 75%;
     margin-left: 13%;
-    margin-right: 13%;
 }
 
 .img2,
