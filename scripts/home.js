@@ -5,7 +5,7 @@ document.getElementById("visit-button").addEventListener("click", function () {
     });
 });
 
-const setmoreRefreshToken = "r1/5e48e27454a2Wf74uEe1RQM1zV8aheYucPfu1e0Ce76f9";
+const setmoreRefreshToken = "blah";
 let setmoreAccessToken = "";
 
 async function getSetmoreAccessToken() {
