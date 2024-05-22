@@ -26,5 +26,14 @@ document.getElementById("toggle-theme").addEventListener("click", function () {
     r.style.setProperty("--button-text", light ? "#fff" : "#000");
     r.style.setProperty("--button-hover", light ? "#fde9ed" : "#202020");
     r.style.setProperty("--header-background", light ? "#fde9ed" : "#3e3a3a");
-    document.getElementById("hero-logo").src = light ? "assets/img/logo.png" : "assets/img/logo-darkmode.png";
+    const logo = document.getElementById("hero-logo");
+    console.log(logo);
+    console.log(logo.src);
+    if (logo) {
+        if (light) {
+            logo.src = logo.src.replace("logo-darkmode", "logo");
+        } else {
+            logo.src = logo.src.replace("logo", "logo-darkmode");
+        }
+    }
 });

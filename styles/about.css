@@ -1,59 +1,76 @@
 #nav-underline {
     left: 150px;
 }
-.content {
-    padding: 0%;
-}
-.about-description-heading-container {
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
+
+.hero-image {
     width: 100%;
-}
-.head {
-    padding: 2%;
-    margin: 0%;
-    padding-right: 0%;
-}
-.about-description {
-    font-size: 16.5px;
-    margin-bottom: 10%;
-    padding: 2%;
-    padding-right: 0%;
-}
-.top-about-image {
-    width: 100%;
-    height: auto;
     transition: 0.3s ease-in-out;
 }
 
-.Opening-word {
-    margin: 0;
-    padding-left: 2%;
-    padding-right: 0%;
+.content > h1 {
+    text-align: center;
+    font-size: 3rem;
 }
 
-.opening-date {
-    padding-left: 6%;
-    padding-bottom: 3.5%;
-    margin: 0;
+.split {
+    display: flex;
+    justify-content: space-between;
 }
 
-.main-img {
-    width: 75%;
-    margin-left: 13%;
-}
-
-.img2,
-.jess1 {
-    padding-top: 6%;
+.split > div {
     width: 45%;
-    padding-bottom: 3%;
 }
 
-.img2 {
-    padding-left: 2%;
+.meet-team-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.jess1 {
-    margin-left: 5%;
+.meet-team-member > div {
+    width: 50%;
+}
+
+.meet-team-member > img {
+    width: 30%;
+    height: auto;
+}
+
+.meet-team-member .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#hero-logo {
+    width: 80%;
+    margin: 4rem 10%;
+}
+
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .split > div {
+        width: 100%;
+    }
+
+    .meet-team-member {
+        flex-direction: column;
+    }
+
+    .meet-team-member > div {
+        width: 100%;
+    }
+
+    .meet-team-member > img {
+        display: none;
+    }
+
+    .meet-team-member.reverse {
+        flex-direction: column-reverse;
+    }
 }
