@@ -4,3 +4,38 @@ document.getElementById("visit-button").addEventListener("click", function () {
         behavior: "smooth",
     });
 });
+
+const setmoreRefreshToken = "r1/5e48e27454a2Wf74uEe1RQM1zV8aheYucPfu1e0Ce76f9";
+let setmoreAccessToken = "";
+
+async function getSetmoreAccessToken() {
+    const response = await fetch(
+        `https://cors-anywhere.herokuapp.com/https://developer.setmore.com/o/oauth2/token?refreshToken=${setmoreRefreshToken}`,
+        {
+            headers: {
+                "Content-Type": "application/json",
+            },
+        }
+    );
+    const data = await response.json();
+    setmoreAccessToken = data.accessToken;
+
+    return data.accessToken;
+}
+
+async function getSetmoreData() {
+    const accessToken = setmoreAccessToken || (await getSetmoreAccessToken());
+    const response = await fetch("https://cors-anywhere.herokuapp.com/https://developer.setmore.com/api/v1/bookingapi/services", {
+        method: "POST",
+        headers: {
+            Authorization: `Bearer ${accessToken}`,
+        },
+    });
+    const data = await response.json();
+
+    return data.data;
+}
+
+// getSetmoreData().then((data) => {
+//     console.log(data);
+// });
