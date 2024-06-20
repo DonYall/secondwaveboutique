@@ -15,10 +15,8 @@ function toggleNav() {
     document.getElementById("hamburger").classList.toggle("active");
 }
 
-document.getElementById("toggle-theme").addEventListener("click", function () {
+function applyTheme(light) {
     const r = document.querySelector(":root");
-    this.classList.toggle("active");
-    const light = !this.classList.contains("active");
     r.style.setProperty("--color-background", light ? "#fff" : "#1a1a1a");
     r.style.setProperty("--color-text", light ? "#000" : "#fff");
     r.style.setProperty("--color-text-brighter", light ? "#434343" : "#d9d9d9");
@@ -27,13 +25,29 @@ document.getElementById("toggle-theme").addEventListener("click", function () {
     r.style.setProperty("--button-hover", light ? "#fde9ed" : "#202020");
     r.style.setProperty("--header-background", light ? "#fde9ed" : "#3e3a3a");
     const logo = document.getElementById("hero-logo");
-    console.log(logo);
-    console.log(logo.src);
     if (logo) {
-        if (light) {
-            logo.src = logo.src.replace("logo-darkmode", "logo");
-        } else {
-            logo.src = logo.src.replace("logo", "logo-darkmode");
-        }
+        logo.src = light ? logo.src.replace("logo-darkmode", "logo") : logo.src.replace("logo", "logo-darkmode");
     }
-});
+    const toggleButton = document.getElementById("toggle-theme");
+    if (light) {
+        toggleButton.classList.remove("active");
+    } else {
+        toggleButton.classList.add("active");
+    }
+}
+
+function toggleTheme() {
+    const light = document.getElementById("toggle-theme").classList.contains("active");
+    applyTheme(light);
+    localStorage.setItem("theme", light ? "light" : "dark");
+}
+
+function loadTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    const light = savedTheme === "light";
+    applyTheme(light);
+}
+
+document.getElementById("toggle-theme").addEventListener("click", toggleTheme);
+
+document.addEventListener("DOMContentLoaded", loadTheme);
