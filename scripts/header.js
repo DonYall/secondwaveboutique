@@ -38,7 +38,7 @@ function applyTheme(light) {
 
 function toggleTheme() {
     const light = document.getElementById("toggle-theme").classList.contains("active");
-    applyTheme(light);
+    applyTheme(!light);
     localStorage.setItem("theme", light ? "light" : "dark");
 }
 
