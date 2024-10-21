@@ -1,31 +1,85 @@
-
-#nav-underline {
-    left: 150px;
+/* ================================
+   VARIABLES
+   ================================ */
+   :root {
+    --transition-speed: 0.3s;
+    --hero-logo-width: 80%;
+    --hero-logo-margin: 4rem 10%;
+    --font-size-large: 3rem;
+    --social-gap: 1rem;
+    --social-font-size: 1.5rem;
 }
 
+/* ================================
+   GLOBAL STYLES
+   ================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+#nav-underline {
+    position: absolute; /* Ensure positioning context */
+    left: 150px;
+    /* Consider adding top or bottom properties if needed */
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
 .hero-image {
     width: 100%;
-    transition: 0.3s ease-in-out;
+    transition: all var(--transition-speed) ease-in-out;
 }
 
+#hero-logo {
+    width: var(--hero-logo-width);
+    margin: var(--hero-logo-margin);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================================
+   CONTENT STYLES
+   ================================ */
 .content > h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--font-size-large);
+    margin-bottom: 2rem;
 }
 
+/* ================================
+   LAYOUTS
+   ================================ */
 .split {
     display: flex;
     justify-content: space-between;
+    gap: 2rem; /* Added gap for spacing between columns */
 }
 
 .split > div {
     width: 45%;
 }
 
+/* ================================
+   TEAM MEMBER SECTION
+   ================================ */
 .meet-team-member {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem; /* Added gap for better spacing */
 }
 
 .meet-team-member > div {
@@ -35,21 +89,29 @@
 .meet-team-member > img {
     width: 30%;
     height: auto;
+    border-radius: 50%; /* Optional: makes images circular */
 }
 
 .meet-team-member .socials {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    font-size: 1.5rem;
+    gap: var(--social-gap);
+    font-size: var(--social-font-size);
 }
 
-#hero-logo {
-    width: 80%;
-    margin: 4rem 10%;
+/* ================================
+   UNDERLINE NAVIGATION (if applicable)
+   ================================ */
+#nav-underline {
+    /* Ensure it's styled appropriately */
+    height: 2px;
+    background-color: #000;
+    transition: left var(--transition-speed);
 }
 
+/* ================================
+   MEDIA QUERIES
+   ================================ */
 @media (max-width: 768px) {
     .split {
         flex-direction: column;
@@ -61,6 +123,7 @@
 
     .meet-team-member {
         flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
     }
 
     .meet-team-member > div {
@@ -73,5 +136,35 @@
 
     .meet-team-member.reverse {
         flex-direction: column-reverse;
+    }
+
+    /* Adjust hero logo margin for smaller screens */
+    #hero-logo {
+        margin: 2rem 5%;
+    }
+
+    /* Adjust font sizes for better readability on smaller screens */
+    .content > h1 {
+        font-size: 2.5rem;
+    }
+
+    .socials {
+        font-size: 1.2rem;
+    }
+}
+
+/* Additional Media Queries for Smaller Devices (Optional) */
+@media (max-width: 480px) {
+    .content > h1 {
+        font-size: 2rem;
+    }
+
+    #hero-logo {
+        width: 90%;
+        margin: 1rem 5%;
+    }
+
+    .socials {
+        font-size: 1rem;
     }
 }
